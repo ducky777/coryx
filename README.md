@@ -6,15 +6,23 @@ This documentation is meant for Alpha testers of Coryx.ai
 `pip install -i https://test.pypi.org/simple/ coryx`
 
 # Set-up
-Run `coryx init` and you will be prompted for your credentials. This only needs to be run once.
+Run `coryx init` and you will be prompted for your credentials. This will generate a `.coryxenv` file to store your credentials. 
 
-# Quick start
+**NOTE: THIS FILE NEEDS TO BE AT THE ROOT OF WHERE YOU ARE RUNNING CORYX**
+
+# Quick start 
+`git clone https://github.com/ducky777/coryx.git`
+
 `coryx run -f {path_to_your_file.py} -o {path_to_output_directory}`
+
+With `example_script.py` provided here, you can run
+
+`coryx run -f example_script.py -o output -d -t`
 
 ## Arguments
 ### positional arguments:
-  1. `run` - to run coryx to refactor
-  2. `init` to run for initial setup
+  1. `run`: to run coryx to refactor
+  2. `init`: to run for initial setup
 
 ### flags
 
