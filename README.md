@@ -30,5 +30,12 @@ Run `coryx init` and you will be prompted for your credentials. This only needs 
 ## I am getting JSON decode error
 Make sure your script does not have non ascii characters like Chinese characters or emojis.
 
+## Dependencies are not installed properly when I pip install
+If pip did not install the dependencies properly, manually install:
+```sh
+pip install requests
+pip install python-dotenv
+```
+
 # Support
 Join our slack channel for community support. Alternatively you can email us at tech@coryx.ai.
